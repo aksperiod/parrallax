@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js" charset="utf-8"></script>
+        <style media="screen">
+            html,
+            body {
+                margin:0;
+                padding:0;
+            }
+            body {
+                height: 200vh;
+                width: 100vw;
+            }
+            .item {
+                position: fixed;
+                height: 100%;
+                width: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .text {
+                height: 100vh;
+                width: 100vw;
+                position: absolute;
+                background-color: #103916;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div  class="item" data-start="top:0%" data-end="top:-1%" style="background-image:url('img/1.png')"></div>
+        <div  class="item" data-start="top:0%" data-end="top:-10%" style="background-image:url('img/2.png')"></div>
+        <div  class="item" data-start="top:0%" data-end="top:-45%" style="background-image:url('img/3.png')"></div>
+        <div  class="item" data-start="top:0%" data-end="top:-60%" style="background-image:url('img/4.png')"></div>
+        <div  class="item" data-start="top:0%" data-end="top:-70%" style="background-image:url('img/5.png')"></div>
+        <div  class="item" data-start="top:0%" data-end="top:-100%" style="background-image:url('img/6.png'); border-bottom:100px solid #103916"></div>
+        <div class="text" data-start="top:100%" data-end="top:100%"></div>
+        <script type="text/javascript">
+        var s = skrollr.init();
+        </script>
+    </body>
+</html>
